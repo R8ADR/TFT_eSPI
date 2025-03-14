@@ -9,7 +9,7 @@
 {
   fillScreen(TFT_RED);
   writecommand(ST7789_SLPOUT);   // Sleep out
-  delay(120);
+  delay(10);
 
   writecommand(ST7789_NORON);    // Normal display mode on
 
@@ -116,11 +116,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   end_tft_write();
-  delay(120);
+  delay(10);
   begin_tft_write();
 
   writecommand(ST7789_DISPON);    //Display on
-  delay(120);
+  delay(10);
 
 #ifdef TFT_BL
   // Turn on the back-light LED
@@ -134,7 +134,7 @@
 // TTGO ESP32 S3 T-Display
 {
   writecommand(ST7789_SLPOUT);   // Sleep out
-  delay(120);
+  delay(10);
 
   writecommand(ST7789_NORON);    // Normal display mode on
 
@@ -223,11 +223,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   end_tft_write();
-  delay(120);
+  delay(10);
   begin_tft_write();
 
   writecommand(ST7789_DISPON);    //Display on
-  delay(120);
+  delay(10);
 
 #ifdef TFT_BL
   // Turn on the back-light LED
